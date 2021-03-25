@@ -5,4 +5,4 @@
   tasks:
 
   - name: Shutdown All Server
-    community.general.shutdown:
+    shell: shutdown -h now

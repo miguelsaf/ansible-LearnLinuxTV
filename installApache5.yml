@@ -12,4 +12,8 @@
          - "{{ apache_package }}"
          - "{{ php_package }}"
       state: latest
-#      update_cache: true
+  
+  - name: update index
+    package:
+      update_cache: true    
+    when: ansible_distribution == "CentOS"
