@@ -10,17 +10,13 @@
 #      update_cache: true
 #    when: ansible_distribution == "Ubuntu"
 
-  - name: install apache2 package for Ubuntu
+  - name: install apache2 and php packages for Ubuntu
     apt:
-      name: apache2
+      name: 
+         - apache2
+         - libapache2-mod-php
       state: latest
     when: ansible_distribution in ["Ubuntu","Debian"]
-
-  - name: install php package for Ubuntu
-    apt:
-      name: libapache2-mod-php
-      state: latest
-    when: ansible_distribution == "Ubuntu"
 
 #Commands for CentOS
   - name: Update repository index
@@ -28,14 +24,10 @@
       update_cache: true
     when: ansible_distribution == "CentOS"
 
-  - name: install apache2 package for CentOS
+  - name: install apache2 and php packages for CentOS
     dnf:
-      name: httpd
+      name: 
+         - httpd
+         - php
       state: latest
     when: ansible_distribution in ["CentOS","RedHat"]
-
-  - name: install php package for CentOS
-    dnf:
-      name: php
-      state: latest
-    when: ansible_distribution == "CentOS"
