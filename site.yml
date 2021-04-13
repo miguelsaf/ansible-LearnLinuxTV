@@ -22,7 +22,7 @@
   become: true
   tasks:
 
-  - name: install apache2, php packages and update index Ubuntu
+  - name: installation apache2, php packages and update index Ubuntu
     apt:
       name: 
          - apache2
