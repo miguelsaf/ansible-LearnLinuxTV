@@ -11,3 +11,6 @@ ubtsrv2
 [file_servers]
 ubtsrv3
 #172.16.111.139
+
+[workstations]
+172.16.111.137
