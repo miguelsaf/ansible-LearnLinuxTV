@@ -1,0 +1,4 @@
+ubtsrv1 apache_package=apache2 php_package=libapache2-mod-php
+ubtsrv2 apache_package=apache2 php_package=libapache2-mod-php
+ubtsrv3 apache_package=apache2 php_package=libapache2-mod-php
+cntsrv1 apache_package=httpd php_package=php

@@ -1,4 +1,13 @@
-ubtsrv1 apache_package=apache2 php_package=libapache2-mod-php
-ubtsrv2 apache_package=apache2 php_package=libapache2-mod-php
-ubtsrv3 apache_package=apache2 php_package=libapache2-mod-php
-cntsrv1 apache_package=httpd php_package=php
+[web_servers]
+ubtsrv1
+#172.16.111.136
+cntsrv1
+#172.16.111.140
+
+[db_servers]
+ubtsrv2
+#172.16.111.138
+
+[file_servers]
+ubtsrv3
+#172.16.111.139
